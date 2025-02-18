@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 50px;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.home .hero {
+  background-image: url("/images/heroh1.jpeg");
+}
+
+.about .hero {
+  background-image: url("/images/heroh2.jpeg");
+}
+
+.content-left {
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.content-left h2,
+.content-left h3 {
+  color: #333;
+}
+
+.content-left p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.content-left ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-left ul li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.request-btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.request-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
